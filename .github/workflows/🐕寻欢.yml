@@ -34,6 +34,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕种豆】'
               run: |
                node xlcsecret.js
@@ -47,6 +50,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东萌宠】'
               run: |
                 node xlcsecret.js
@@ -60,6 +66,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东农厂】'
               run: |
                 node xlcsecret.js
@@ -72,6 +81,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕喜工】'
               run: |
                 node xlcsecret.js
@@ -84,6 +96,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东县金洪包】'
               run: |
                node xlcsecret.js
@@ -96,6 +111,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东美研院】'
               run: |
                node xlcsecret.js
@@ -108,6 +126,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东取关】'
               run: |
                node xlcsecret.js
@@ -120,6 +141,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东TRY】'
               run: |
                node xlcsecret.js
@@ -132,6 +156,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
             - name: '运行 【🐕东qian到】'
               run: |
                node xlcsecret.js
