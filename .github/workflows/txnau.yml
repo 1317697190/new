@@ -1,4 +1,4 @@
-name: you-txn-youpy
+name: txnau
 
 on:
   workflow_dispatch:
