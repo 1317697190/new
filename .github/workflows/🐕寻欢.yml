@@ -1,0 +1,98 @@
+name: 🐕东xlc任务.
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "5 */3 * * *"
+    watch:
+        types: [started]
+    repository_dispatch:
+        types: 🐕东xlc任务.
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        if: github.event.repository.owner.id == github.event.sender.id
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: '运行 【🐕东农场】'
+              run: |
+               node xlcsecret.js
+              env:
+               JD_COOKIE: ${{ secrets.JD_COOKIE }}
+               SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_ddnc.js
+               
+
+            - name: '运行 【🐕种豆】'
+              run: |
+               node xlcsecret.js
+              env:
+               JD_COOKIE: ${{ secrets.JD_COOKIE }}
+               SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_zd.js
+
+            - name: '运行 【🐕东萌宠】'
+              run: |
+                node xlcsecret.js
+              env:
+               JD_COOKIE: ${{ secrets.JD_COOKIE }}
+               SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_mc.js
+
+            - name: '运行 【🐕东农厂】'
+              run: |
+                node xlcsecret.js
+              env:
+                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/ddnc.js
+  
+
+            - name: '运行 【🐕喜工】'
+              run: |
+                node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jx_gc.js
+          
+
+            - name: '运行 【🐕东县金洪包】'
+              run: |
+               node xlcsecret.js
+              env:
+                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jdhb.js
+
+
+            - name: '运行 【🐕东美研院】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_beauty.js
+                
+            - name: '运行 【🐕东取关】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_unsubscribe.js
+                
+            - name: '运行 【🐕东TRY】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/try.js
+                
+            - name: '运行 【🐕东qian到】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+            
