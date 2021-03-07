@@ -51,33 +51,4 @@ jobs:
           GITHUB: ${{ secrets.GITHUB }}      
           EFORK: ${{ secrets.EFORK }}
 
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: 'Set up Python'
-        uses: actions/setup-python@v1
-        with:
-           python-version: 3.7
-           
-      - name: 'Install requests'
-        run: pip install requests
-      - name: 'run youthpy'
-        run: python3 youth.py
-         # 目前最大5个账号
-        env:
-             YOUTH_HEADER1: ${{ secrets.YOUTH_HEADER1 }}  
-             YOUTH_READBODY1: ${{ secrets.YOUTH_READBODY1 }}  
-             YOUTH_STARTBODY1: ${{ secrets.YOUTH_STARTBODY1 }}  
-             YOUTH_READTIMEBODY1: ${{ secrets.YOUTH_READTIMEBODY1 }}  
-             YOUTH_WITHDRAWBODY1: ${{ secrets.YYOUTH_WITHDRAWBODY1 }} 
-             YOUTH_SHAREBODY1: ${{ secrets.YOUTH_SHAREBODY1 }}
-             YOUTH_HEADER2: ${{ secrets.YOUTH_HEADER2 }}  
-             YOUTH_READBODY2: ${{ secrets.YOUTH_READBODY2 }}  
-             YOUTH_STARTBODY2: ${{ secrets.YOUTH_STARTBODY2 }}  
-             YOUTH_READTIMEBODY2: ${{ secrets.YOUTH_READTIMEBODY2 }} 
-             YOUTH_WITHDRAWBODY2: ${{ secrets.YOUTH_WITHDRAWBODY2 }}  
-             YOUTH_SHAREBODY2: ${{ secrets.YOUTH_SHAREBODY2 }}
-             BARK: ${{ secrets.BARK }}  #非必须 bark通知
-             TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}  #非必须 tg机器人token
-             TG_USER_ID: ${{ secrets.TG_USER_ID }}  #非必须 tg机器人userId
-             DD_BOT_ACCESS_TOKEN: ${{ secrets.DD_BOT_ACCESS_TOKEN }}  #非必须 钉钉机器人token
-             DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}  #非必须 钉钉机器人secret
+      
