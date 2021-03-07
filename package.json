@@ -1,5 +1,5 @@
 {
-  "name": "xingliuchao",
+  "name": "justnew139",
   "version": "1.0.0",
   "description": "",
   "main": "QQread.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xingliuchao/jd.git"
+    "url": "https://github.com/justnew139/full.git"
   },
-  "keywords": ["QQ读书小程序等等"],
-  "author": "xingliuchao",
+  "keywords": ["小程序等等"],
+  "author": "justnew139",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xingliuchao/jd/issues"
+    "url": "https://github.com/justnew139/full/issues"
   },
-  "homepage": "https://github.com/xingliuchao/jd#readme",
+  "homepage": "https://github.com/justnew139/full#readme",
   "dependencies": {
     "crypto-js": "^4.0.0",
     "download": "^8.0.0",
