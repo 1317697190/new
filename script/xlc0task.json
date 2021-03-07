@@ -44,7 +44,7 @@
    "8 8 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_get_share_code.js, tag=京东互助码, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_get_share_code.png, enabled=true",
      "12 * * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_pigPet.js, tag=京东金融-养猪猪 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_pigPet.png, enabled=true",
     "6 * * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js, tag=京喜财富岛 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
-    "0 0 * * * https://raw.githubusercontent.com/justnew139/tests/master/cfd-tx.js, tag=财富岛TX , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
+    "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jx_cfdtx.js, tag=财富岛TX , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
     "8 */3 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_daily_egg.js, tag=京东金融-天天提鹅 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_daily_egg.png, enabled=true",
     "7 9 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js, tag=京东到家 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jddj.png, enabled=true",
     "20 9 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, tag=喜马拉雅签到 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/ximalaya.png, enabled=true",
@@ -64,13 +64,13 @@
     "59 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js, tag=中国联通, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10010.png, enabled=true",
     "10 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true",
     "3 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/Orz-3/task/master/Netease.png, enabled=true",
-    "0 7 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_speed_sign.js, tag=京东极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
-    "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_speed_redpocke.js, tag=京东极速版天天领红包, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
+    "0 7 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_speed_sign.js, tag=京东极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
+    "0 0 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_speed_redpocke.js, tag=京东极速版天天领红包, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
     "1 0 * * * https://raw.githubusercontent.com/justnew139/full/main/jd_cj.js, tag=🐕抽奖, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
     "0 8 1-8/1,27,28 2,3 * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-    "1 */6 * * * https://raw.githubusercontent.com/justnew139/tests/master/try.js, tag=🐕试用, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
+    "1 */6 * * * https://raw.githubusercontent.com/justnew139/full/main/try.js, tag=🐕试用, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
     "0 8,21 1-8/1 3 * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_firecrackers.js, tag=她的节享京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-    "*/30 * * * * https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.js, tag=悦动qz, img-url=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.png, enabled=true",
+    "*/30 * * * * https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/qmyd.js, tag=悦动qz, img-url=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.png, enabled=true",
     
     
     
