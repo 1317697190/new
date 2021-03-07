@@ -12,19 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js 14.x
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+           node-version: 12.x
       - name: npm install
-        if: env.YOUTH_HEADER
         run: |
-          npm install
-      - name: 'youth2'
+              npm install
+      - name: 'run youth'
         run: |
-          node youth.js
+           node youth.js
         env:
           YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
           YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
