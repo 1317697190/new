@@ -1,0 +1,78 @@
+name: youth_readT
+
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '6 0-20/4 * * *'
+  watch:
+    types: started
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    env:
+      YOUTH_READ_T: ${{ secrets.YOUTH_READ_T }}
+      YOUTH_READ_T2: ${{ secrets.YOUTH_READ_T2 }}
+      YOUTH_READ_T3: ${{ secrets.YOUTH_READ_T3 }}
+      YOUTH_READ_T4: ${{ secrets.YOUTH_READ_T4 }}
+      YOUTH_READ_T5: ${{ secrets.YOUTH_READ_T5 }}
+      YOUTH_READ_T6: ${{ secrets.YOUTH_READ_T6 }}
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: |
+          npm install
+          
+      - name: '运行 【中青自动阅读一49W】'
+        if: env.YOUTH_READ_T
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}
+          
+      - name: '运行 【中青自动阅读二51s】'
+        if: env.YOUTH_READ_T2
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T2 }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}
+  
+      - name: '运行 【中青自动阅读三52s】'
+        if: env.YOUTH_READ_T3
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T3 }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}
+          
+      - name: '运行 【中青自动阅读四51w】'
+        if: env.YOUTH_READ_T4
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T4 }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}
+
+      - name: '运行 【中青自动阅读五52h】'
+        if: env.YOUTH_READ_T5
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T5 }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}
+          
+      - name: '运行 【中青自动阅读六50W】'
+        if: env.YOUTH_READ_T6
+        run: |
+          node YOUTH_READ_T.js
+        env:
+          YOUTH_READ_T: ${{ secrets.YOUTH_READ_T6 }}
+          YOUTH_ATIME_T: ${{ secrets.YOUTH_ATIME_T }}    
