@@ -1,4 +1,4 @@
-name: youth2
+name: you-txn-youpy
 
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
           SYNCURL: youth.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
-          
+          Efork: ${{ secrets.Efork }}
           
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -50,7 +50,8 @@ jobs:
           TX_VIDEO: ${{ secrets.TX_VIDEO }}
           SYNCURL: txn_au.js
           XLC: ${{ secrets.XLC }}
-          GITHUB: ${{ secrets.GITHUB }}        
+          GITHUB: ${{ secrets.GITHUB }}      
+          Efork: ${{ secrets.Efork }}
 
       - name: Checkout
         uses: actions/checkout@v2
