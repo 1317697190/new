@@ -27,11 +27,10 @@ jobs:
           YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
           YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
           YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
-          YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
           SYNCURL: youth.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
-          Efork: ${{ secrets.Efork }}
+          EFORK: ${{ secrets.EFORK }}
           
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -43,15 +42,14 @@ jobs:
               npm install
       - name: 'run txnau'
         run: |
-           node xlcsecret-All.js
+           node txn_au.js
         env:
           TX_CK: ${{ secrets.TX_CK }}
           TX_READ: ${{ secrets.TX_READ }}
           TX_VIDEO: ${{ secrets.TX_VIDEO }}
-          SYNCURL: txn_au.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}      
-          Efork: ${{ secrets.Efork }}
+          EFORK: ${{ secrets.EFORK }}
 
       - name: Checkout
         uses: actions/checkout@v2
