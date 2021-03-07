@@ -45,10 +45,9 @@ jobs:
         run: |
            node xlcsecret-All.js
         env:
-          YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
-          YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
-          YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
-          YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
+          TX_CK: ${{ secrets.TX_CK }}
+          TX_READ: ${{ secrets.TX_READ }}
+          TX_VIDEO: ${{ secrets.TX_VIDEO }}
           SYNCURL: txn_au.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}        
