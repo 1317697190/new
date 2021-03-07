@@ -40,7 +40,7 @@ jobs:
       - name: npm install
         run: |
               npm install
-      - name: 'run txnau'
+      - name: 'run txn'
         run: |
            node xlcsecret-All.js
         env:
