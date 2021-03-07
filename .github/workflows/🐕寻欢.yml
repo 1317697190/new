@@ -29,21 +29,37 @@ jobs:
                JD_COOKIE: ${{ secrets.JD_COOKIE }}
                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_ddnc.js
                
-
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕种豆】'
               run: |
                node xlcsecret.js
               env:
                JD_COOKIE: ${{ secrets.JD_COOKIE }}
                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_zd.js
-
+            
+            
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东萌宠】'
               run: |
                 node xlcsecret.js
               env:
                JD_COOKIE: ${{ secrets.JD_COOKIE }}
                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_mc.js
-
+            
+            
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东农厂】'
               run: |
                 node xlcsecret.js
@@ -51,15 +67,23 @@ jobs:
                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
                  SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/ddnc.js
   
-
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕喜工】'
               run: |
                 node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jx_gc.js
-          
-
+           
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东县金洪包】'
               run: |
                node xlcsecret.js
@@ -67,28 +91,47 @@ jobs:
                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
                  SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jdhb.js
 
-
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东美研院】'
               run: |
                node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_beauty.js
-                
+            
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东取关】'
               run: |
                node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_unsubscribe.js
-                
+            
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东TRY】'
               run: |
                node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/try.js
-                
+            
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
             - name: '运行 【🐕东qian到】'
               run: |
                node xlcsecret.js
