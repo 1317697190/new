@@ -18,15 +18,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync shuye
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/wuzhi01/MyActions.git"
-          source_branch: "main"
-          destination_branch: "cp-jd"
-          github_token: ${{ secrets.PAT }}
-          
       - name: sync full
         uses: repo-sync/github-sync@v2
         if: env.PAT
