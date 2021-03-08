@@ -1,0 +1,32 @@
+name: txn
+
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '*/5 * * * *'
+  watch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:   
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'run txn'
+        run: |
+           node xlcsecret-All.js
+        env:
+          TXNEWS_SIGN: ${{ secrets.TXNEWS_SIGN }}
+          TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE }}
+          TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO }}
+          SYNCURL: txnew.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}      
+          EFORK: ${{ secrets.EFORK }}
+  
