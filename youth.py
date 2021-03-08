@@ -766,10 +766,10 @@ def run():
 
       result += f'\n【今日收益】：+{"{:4.2f}".format(today_score / 10000)}'
       content += f'\n【今日收益】：+{"{:4.2f}".format(today_score / 10000)}'
-      result += f'\n【账户剩余】：{"{:4.2f}".format(score / 10000)}'
-      content += f'\n【账户剩余】：{"{:4.2f}".format(score / 10000)}'
-      result += f'\n【历史收益】：{"{:4.2f}".format(total_score / 10000)}\n\n'
-      content += f'\n【历史收益】：{"{:4.2f}".format(total_score / 10000)}\n'
+     # result += f'\n【账户剩余】：{"{:4.2f}".format(score / 10000)}'
+     # content += f'\n【账户剩余】：{"{:4.2f}".format(score / 10000)}'
+     # result += f'\n【历史收益】：{"{:4.2f}".format(total_score / 10000)}\n\n'
+     # content += f'\n【历史收益】：{"{:4.2f}".format(total_score / 10000)}\n'
 
   print(content)
 
