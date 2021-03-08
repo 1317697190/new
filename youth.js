@@ -99,7 +99,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
       myuid = cookie.match(/uid=\d+/);
       await userInfo();
       nick = nick ? nick: null;
-      $.log(`\n ********** ${nick} 现金: ${cash}元 ********\n`);
+  //    $.log(`\n ********** ${nick} 现金: ${cash}元 ********\n`);
       await bonusTask();
       await TaskCenter();
       await openbox();
@@ -154,7 +154,7 @@ function userInfo() {
         cash = signinfo.data.user.money;
         signday = signinfo.data.sign_day;
         totalscore = signinfo.data.user.score; 
-        subTitle = `【收益总计】${totalscore}青豆 现金约${cash}元`;
+        subTitle = `【收益总计】${totalscore}青豆`;
         nick = '账号:'+signinfo.data.user.nickname;
         if (cookieArr.length == 1) {
           $.setdata(nick, "zq_nick")
