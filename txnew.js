@@ -338,7 +338,7 @@ function getTotal() {
             } else {
                 const Total_Earn = JSON.parse(data)
                 cashtotal = Total_Earn.data.wealth[1].title
-                $.sub = '【收益总计】' + Total_Earn.data.wealth[0].title + '金币  ' + "钱包: " + cashtotal + '元'
+                $.sub = '【收益总计】' + Total_Earn.data.wealth[0].title + '金币  '/* + "钱包: " + cashtotal + '元'*/
                     // $.log("钱包收益共计"+obj.data.wealth[1].title+"元")
             }
             resolve()
