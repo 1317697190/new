@@ -17,10 +17,10 @@ jobs:
           python-version: 3.7
          
       - name: 'Install requirements'
-        run: pip install -r .requests.txt
+        run: pip install -r ./requests.txt
         
       - name: '-' 
-        run: python3 .free/freeman.py
+        run: python3 free/freeman.py
         env:
             DJJ_TELE_COOKIE: ${{ secrets.DJJ_TELE_COOKIE }}
             airplay_data: ${{ secrets.airplay_data }}
