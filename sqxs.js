@@ -371,7 +371,7 @@ function userinfo() {
                         $.log("【视频任务】本次共获得" + vediogold + "金币");
                         $.log("【抽奖任务】本次共获得" + drawgold + "金币");
                         $.log("【金币总数】" + result.data.gold);
-                        $.log("【总计收益】" + result.data.income + "元");
+                       // $.log("【总计收益】" + result.data.income + "元");
                     } else {
                         $.log("【金币总数】数据异常," + result.message);
                         //$.log(data);
