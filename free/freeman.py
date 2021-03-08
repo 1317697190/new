@@ -22,12 +22,11 @@ bdlist=[]
 djj_bark_cookie=''
 
 djj_tele_cookie=''
-#djj_tele_cookie='机器人id@自己id'
+#djj_tele_cookie=机器人id@自己id
 
-#osenviron['airplay_data']='''
+#airplay_data']=
 #http://freeperson.xyz/user
 #{"Accept": "",}
-#'''
 
 
 
@@ -67,16 +66,16 @@ def hand(userRes,k):
       
       
       
-      adress=re.compile('data-clipboard-text="(.*)</button>').findall(userRes)
-      msg='\n【订阅地址】\n'
-      for dt in adress:
-         dt=dt.replace('">','')
-         dt=dt.replace('<i class="metron-quantumultx text-white</i>&nbsp;&nbsp;','')
-         dt=dt.replace('<i class="metron-v2rayng text-white</i>&nbsp;&nbsp;','')
-         dt=dt.replace('<i class="metron-surfboard text-white</i>&nbsp;&nbsp;','')
-         dt=dt.replace('<i class="metron-kitsunebi text-white</i>&nbsp;&nbsp;','')
-         dt=dt.replace('&nbsp;&nbsp;','')
-         msg+=dt+'\n'
+     # adress=re.compile('data-clipboard-text="(.*)</button>').findall(userRes)
+     # msg='\n【订阅地址】\n'
+     # for dt in adress:
+    #     dt=dt.replace('">','')
+      #   dt=dt.replace('<i class="metron-quantumultx text-white</i>&nbsp;&nbsp;','')
+      #   dt=dt.replace('<i class="metron-v2rayng text-white</i>&nbsp;&nbsp;','')
+       #  dt=dt.replace('<i class="metron-surfboard text-white</i>&nbsp;&nbsp;','')
+       #  dt=dt.replace('<i class="metron-kitsunebi text-white</i>&nbsp;&nbsp;','')
+       #  dt=dt.replace('&nbsp;&nbsp;','')
+       #  msg+=dt+'\n'
       loger(msg)
    elif k==1:
       
