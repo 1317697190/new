@@ -27,7 +27,7 @@ jobs:
           YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
           YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
           YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
-          SYNCURL: youth.js
+          SYNCURL: main/youth.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
@@ -47,7 +47,7 @@ jobs:
           TXNEWS_SIGN: ${{ secrets.TXNEWS_SIGN }}
           TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE }}
           TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO }}
-          SYNCURL: txnew.js
+          SYNCURL: main/txnew.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}      
           EFORK: ${{ secrets.EFORK }}
@@ -70,7 +70,7 @@ jobs:
           JRTTFARMKEY: ${{ secrets.JRTTFARMKEY }}
           JRTTREADURL: ${{ secrets.JRTTREADURL }}
           JRTTREADKEY: ${{ secrets.JRTTREADKEY }}
-          SYNCURL: ttx/ttjs.js
+          SYNCURL: main/ttx/ttjs.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}      
           EFORK: ${{ secrets.EFORK }}
