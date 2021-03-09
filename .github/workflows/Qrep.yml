@@ -1,0 +1,29 @@
+name: Qrep
+
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '*/29 * * * *'
+  watch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'run QreP'
+        run: |
+           node xlcsecret-All.js
+        env:
+          QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
+          SYNCURL: z/Task/QQread.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
+          EFORK: ${{ secrets.EFORK }}
