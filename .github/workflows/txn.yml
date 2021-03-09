@@ -25,7 +25,7 @@ jobs:
           TXNEWS_SIGN: ${{ secrets.TXNEWS_SIGN }}
           TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE }}
           TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO }}
-          SYNCURL: txnew.js
+          SYNCURL: main/txnew.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}      
           EFORK: ${{ secrets.EFORK }}
