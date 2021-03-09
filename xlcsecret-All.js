@@ -155,7 +155,7 @@ st=st.replace(fn1,"********");}
  {fn1=st.substr(i,1);
  st=st.replace(fn1,"****");}
  
- if (st[i]==("182"))
+ if (st[i]==("1"))
  {fn1=st.substr(i,1);
  st=st.replace(fn1,"******");}
 
@@ -163,7 +163,7 @@ if (st[i]==("lit"))
 {fn1=st.substr(i,1);
 st=st.replace(fn1,"*************");}
  
-if (st[i]==("现金"))
+if (st[i]==("现"))
 {fn1=st.substr(i,1);
 st=st.replace(fn1,"***");}
    
@@ -175,7 +175,7 @@ if (st[i]==("歩"))
 {fn1=st.substr(i,1);
 st=st.replace(fn1,"****");}
    
-if (st[i]==("十三"))
+if (st[i]==("十"))
 {fn1=st.substr(i,1);
 st=st.replace(fn1,"****");}
    
