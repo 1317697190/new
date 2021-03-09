@@ -70,7 +70,7 @@
     "1 */6 * * * https://raw.githubusercontent.com/justnew139/full/main/try.js, tag=🐕试用, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "*/30 * * * * https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/qmyd.js, tag=悦动qz, img-url=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/qmyd.png, enabled=true",
     "30 8 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js, tag=京小兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jxd.png, enabled=true",
-    "0 9 8-31 3 * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_global.js, tag=国际-环球挑战赛, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
+    "0 5 * * * https://raw.githubusercontent.com/justnew139/full/main/jd_huanqiu.js, tag=国际-环球挑战赛, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
     
     
     
