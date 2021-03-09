@@ -25,7 +25,7 @@ jobs:
         run: |
            node xlcsecret-All.js
         env:
-          SYNCURL: sqxs.js
+          SYNCURL: main/sqxs.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
