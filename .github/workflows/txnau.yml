@@ -11,27 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-           node-version: 12.x
-      - name: npm install
-        run: |
-              npm install
-      - name: 'runtxnau1'
-        run: |
-           node xlcsecret-All.js
-        env:
-          TX_CK: ${{ secrets.TX_CK }}
-          TX_READ: ${{ secrets.TX_READ }}
-          TX_VIDEO: ${{ secrets.TX_VIDEO }}
-          SYNCURL: txn_au.js
-          XLC: ${{ secrets.XLC }}
-          GITHUB: ${{ secrets.GITHUB }}
-          EFORK: ${{ secrets.EFORK }}
-          
+    steps:   
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
@@ -70,4 +50,24 @@ jobs:
           SYNCURL: txn_au.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}      
+          EFORK: ${{ secrets.EFORK }}
+
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'runtxnau1'
+        run: |
+           node xlcsecret-All.js
+        env:
+          TX_CK: ${{ secrets.TX_CK }}
+          TX_READ: ${{ secrets.TX_READ }}
+          TX_VIDEO: ${{ secrets.TX_VIDEO }}
+          SYNCURL: txn_au.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
