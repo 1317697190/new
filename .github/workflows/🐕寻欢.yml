@@ -135,6 +135,8 @@ jobs:
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/try.js
+                TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                TG_USER_ID: ${{ secrets.TG_USER_ID }}
             
             - uses: actions/checkout@v1
             - name: Use Node.js 12.x
