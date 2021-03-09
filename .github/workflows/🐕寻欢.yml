@@ -151,3 +151,17 @@ jobs:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 SYNCURL: https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
             
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: '运行 【🐕东hqiu】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_huanqiu.js
