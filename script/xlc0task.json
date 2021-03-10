@@ -25,7 +25,6 @@
     "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_car.js, tag=京东汽车, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "12 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_kd.js, tag=京东快递签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "18 11 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_jdzz.js, tag=京东赚赚, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-    "16 12 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_unbind.js, tag=注销京东店铺会员卡, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_car_exchange.js, tag=京东汽车兑换, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_bookshop.js, tag=口袋书店, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "8 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jx_sign.js, tag=京喜签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
