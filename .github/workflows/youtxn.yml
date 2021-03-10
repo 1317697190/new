@@ -60,12 +60,13 @@ jobs:
       - name: npm install
         run: |
               npm install
-      - name: 'run QreP'
+      - name: 'run bubb'
         run: |
            node xlcsecret-All.js
         env:
-          QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
-          SYNCURL: z/Task/QQread.js
+          BBB_bububaoTOKEN: ${{ secrets.BBB_bububaoTOKEN }}
+          BBB_CASH: ${{ secrets.BBB_BBB_CASH }}
+          SYNCURL: z/Task/bububao.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
