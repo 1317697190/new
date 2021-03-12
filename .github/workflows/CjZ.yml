@@ -30,3 +30,18 @@ jobs:
                   EFORK: ${{ secrets.EFORK }}
                   JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
                   GITHUB: ${{ secrets.GITHUB }}
+                  
+            - name: npm install
+              run: |
+                  npm install
+            - name: "运行 【Da k】"
+              run: |
+                  node DG/Ponysitters_Club_Season.js
+              env:
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  SYNCURL:  https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_entertainment.js
+                  TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                  TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  EFORK: ${{ secrets.EFORK }}
+                  JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
+                  GITHUB: ${{ secrets.GITHUB }}
