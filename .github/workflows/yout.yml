@@ -1,0 +1,33 @@
+name: yout
+
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '*/20 * * * *'
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'run youth'
+        run: |
+           node xlcsecret-All.js
+        env:
+          YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
+          YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
+          YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
+          SYNCURL: main/youthN.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
+          EFORK: ${{ secrets.EFORK }}
