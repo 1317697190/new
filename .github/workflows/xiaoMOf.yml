@@ -1,0 +1,32 @@
+name: xiaoMOf
+on:
+    # push:
+    #     branches:
+    #         - main
+    schedule:
+        - cron: "2 8,23 * * *"
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js 10.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 10.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: "运行 【小MO方】"
+              run: |
+                  node DG/Ponysitters_Club_Season.js
+              env:
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  SYNCURL:  https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_xmf.js
+                  TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                  TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  EFORK: ${{ secrets.EFORK }}
+                  JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
+                  GITHUB: ${{ secrets.GITHUB }}
