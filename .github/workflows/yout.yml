@@ -5,7 +5,6 @@ on:
   schedule:
      - cron: '*/20 * * * *'
   watch:
-    types: started
 
 jobs:
   build:
@@ -27,7 +26,7 @@ jobs:
           YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
           YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
           YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
-          SYNCURL: main/youthN.js
+          SYNCURL: main/youth.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
