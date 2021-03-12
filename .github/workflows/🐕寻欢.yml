@@ -7,7 +7,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: 🐕东xlc任务.
+        types: 🐕东xlc寻欢
 
 jobs:
     build:
@@ -37,7 +37,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: '运行 【🐕种豆】'
+            - name: '运行 【🐕种D】'
               run: |
                node xlcsecret.js
               env:
@@ -53,7 +53,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: '运行 【🐕东萌宠】'
+            - name: '运行 【🐕萌】'
               run: |
                 node xlcsecret.js
               env:
@@ -69,12 +69,12 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: '运行 【🐕东农厂】'
+            - name: '运行 【🐕D工】'
               run: |
                 node xlcsecret.js
               env:
                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/ddnc.js
+                 SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_ddgc.js
   
             - uses: actions/checkout@v1
             - name: Use Node.js 12.x
@@ -84,7 +84,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: '运行 【🐕喜工】'
+            - name: '运行 【🐕X工】'
               run: |
                 node xlcsecret.js
               env:
@@ -161,9 +161,56 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: '运行 【🐕东hqiu】'
+            - name: '运行 【🐕鹅】'
               run: |
                node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_huanqiu.js
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_daily_egg.js
+                
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: '运行 【🐕摇树】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_moneyTree.js
+                
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: '运行 【🐕X岛】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jx_cfd.js
+                
+            - uses: actions/checkout@v1
+            - name: Use Node.js 12.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: '运行 【🐕超】'
+              run: |
+               node xlcsecret.js
+              env:
+                JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_superMarket.js
+                
+            
