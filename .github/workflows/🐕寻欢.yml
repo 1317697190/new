@@ -196,7 +196,7 @@ jobs:
                node xlcsecret.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jx_cfd.js
+                SYNCURL: https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js
                 
             - uses: actions/checkout@v1
             - name: Use Node.js 12.x
