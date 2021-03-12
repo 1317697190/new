@@ -50,3 +50,23 @@ jobs:
                   EFORK: ${{ secrets.EFORK }}
                   JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
                   GITHUB: ${{ secrets.GITHUB }}
+
+            - uses: actions/checkout@v1
+            - name: Use Node.js 10.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 10.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: "运行 【超sh转p】"
+              run: |
+                  node DG/Ponysitters_Club_Season.js
+              env:
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  SYNCURL:  https://raw.githubusercontent.com/i-chenzhe/qx/main/z_marketLottery.js
+                  TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                  TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  EFORK: ${{ secrets.EFORK }}
+                  JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
+                  GITHUB: ${{ secrets.GITHUB }}
