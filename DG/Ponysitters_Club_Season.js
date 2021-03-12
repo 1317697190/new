@@ -51,7 +51,7 @@ NCShareCodes=["11702238f4624a9a92e7494483515a00","77db228e05df4771bb2fab0a3b472e
 MCShareCodes=["MTAxODc2NTEzMjAwMDAwMDAyNzIyNzE1Mw==","MTAxODc2NTEzMjAwMDAwMDAxOTczMzgzMQ==","MTAxODc2NTEzOTAwMDAwMDAyNzk1NDA5OQ==","MTAxODc2NTEzNTAwMDAwMDAyNzYyNzYxNQ==","MTAxODc2NTEzMTAwMDAwMDAyOTU1MTQ1Mw==","MTAxODc2NTEzNDAwMDAwMDAyOTU0NDcyM==","MTAxODc2NTEzMzAwMDAwMDAyNzM2ODMyOQ==","MTE1NDQ5OTIwMDAwMDAwNDM3MTUxMzc=","MTE1NDQ5OTUwMDAwMDAwNDIzNTEyMDE=","MTE1NDUyMjEwMDAwMDAwNDQxMjA4NTM="];//萌宠
 ZDShareCodes= ["olmijoxgmjutzr2rlylpnfhsdfcqe2scndhws3i","mlrdw3aw26j3xiwimfynpwffuc757tkstyhwvhy","eeexxudqtlamofjcugqqvca4mrintvqxjgmln5a","4npkonnsy7xi32dbbs5rmi5zccw7yzuqshvepvi"];//种豆
 ASShareCodes=["eU9YauywMKh08GmBnScV3w","eU9YFr3BIZljrTuTmiRZ","eU9YaOqwNf0joD_UyXMR1w","eU9YPZTSGIJfhwa0miZw","Ihg-aem7b_4n8Ga6iw","eU9Ya73gb6gh9DrSmScVgg"];//签到领现金
-#MHShareCodes=[];//京东盲盒
+//MHShareCodes=[];//京东盲盒
 
 
 let CookieJDs = [];
