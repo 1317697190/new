@@ -23,7 +23,7 @@ jobs:
            node xlcsecret-All.js
         env:
           QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
-          SYNCURL: /youthes/z/Task/QQread.js
+          SYNCURL: /z/Task/QQread.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
@@ -42,7 +42,7 @@ jobs:
         env:
           BBB_bububaoTOKEN: ${{ secrets.BBB_bububaoTOKEN }}
           BBB_CASH: ${{ secrets.BBB_BBB_CASH }}
-          SYNCURL: /youthes/z/Task/bububao.js
+          SYNCURL: /z/Task/bububao.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
@@ -62,7 +62,7 @@ jobs:
         env:
           QMYD_qmydTOKEN: ${{ secrets.QMYD_qmydTOKEN }}
           QMYD_CASH: ${{ secrets.QMYD_CASH }}
-          SYNCURL: /youthes/z/Task/qmyd.js
+          SYNCURL: /z/Task/qmyd.js
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
