@@ -179,6 +179,11 @@ if (st[i]==("十"))
 {fn1=st.substr(i,1);
 st=st.replace(fn1,"****");}
    
+if (st[i]==("徐"))
+{fn1=st.substr(i,1);
+st=st.replace(fn1,"****");}
+   
+   
 }
 
 return st
