@@ -96,11 +96,14 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          repository: justnew139/youth
+          ref: 'master'
+          token: ${{ secrets.PAT }}
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
-           python-version: 3.7
-           
+          python-version: 3.7       
       - name: 'Install requests'
         run: pip install requests
       - name: 'run youthpy'
