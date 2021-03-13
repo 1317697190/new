@@ -24,14 +24,14 @@ jobs:
         with:
           source_repo: "https://github.com/wuzhi01/MyActions.git"
           source_branch: "main"
-          destination_branch: "cp-jd"
+          destination_branch: "shuye"
           github_token: ${{ secrets.PAT }}
           
-      - name: sync full
+      - name: sync free
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/justnew139/full.git"
-          source_branch: "main"
-          destination_branch: "master"
+          source_repo: "https://github.com/freefq/free.git"
+          source_branch: "master"
+          destination_branch: "free"
           github_token: ${{ secrets.PAT }}
