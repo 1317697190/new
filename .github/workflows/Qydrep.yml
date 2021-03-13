@@ -66,3 +66,26 @@ jobs:
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
+
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'run QCZJ'
+        run: |
+           node xlcsecret-All.js
+        env:
+          QCZJ_GetUserInfoHEADER: ${{ secrets.QCZJ_GetUserInfoHEADER }}
+          QCZJ_taskBODY: ${{ secrets.QCZJ_taskBODY }}		
+          QCZJ_activityBODY: ${{ secrets.QCZJ_activityBODY }}	
+          QCZJ_addCoinBODY: ${{ secrets.QCZJ_addCoinBODY }}
+          QCZJ_addCoin2BODY: ${{ secrets.QCZJ_addCoin2BODY }}
+          QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
+          SYNCURL: /z/Task/qczjspeed.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
+          EFORK: ${{ secrets.EFORK }}
