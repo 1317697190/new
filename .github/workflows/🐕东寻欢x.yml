@@ -28,4 +28,4 @@ jobs:
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
-                SYNCURL: https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js
+                SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/cfd.js
