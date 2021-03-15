@@ -26,4 +26,4 @@ jobs:
                   node cfd.js
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
-              
+                JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
