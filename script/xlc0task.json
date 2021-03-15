@@ -42,7 +42,7 @@
     "10 7 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_ms.js, tag=京东秒秒币, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/shylocks/jd_ms.jpg, enabled=true",
    "8 8 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_get_share_code.js, tag=京东互助码, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_get_share_code.png, enabled=true",
      "12 * * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_pigPet.js, tag=京东金融-养猪猪 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_pigPet.png, enabled=true",
-    "6 * * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js, tag=京喜财富岛 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
+    "36 * * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js, tag=京喜财富岛 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
     "0 0 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jx_cfdtx.js, tag=财富岛TX , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
     "8 */3 * * * https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_daily_egg.js, tag=京东金融-天天提鹅 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_daily_egg.png, enabled=true",
     "7 9 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js, tag=京东到家 , img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jddj.png, enabled=true",
@@ -71,7 +71,7 @@
     "30 8 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js, tag=京小兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jxd.png, enabled=true",
     "0 5 * * * https://raw.githubusercontent.com/justnew139/full/main/jd_huanqiu.js, tag=国际-环球挑战赛, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     "30,31 20-23/1 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js, tag=超级直播间红包雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-    "0 0 0 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js, tag=手机尚学季, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+    "1 * * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_cfd.js, tag=财富岛lxk, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jx_cfd.png, enabled=true",
     
     
     
