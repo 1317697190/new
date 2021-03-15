@@ -11,6 +11,52 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
+    
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+            node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: '运行 【🐕鹅】'
+        run: |
+         node xlcsecret.js
+        env:
+            JD_COOKIE: ${{ secrets.JD_COOKIE }}
+            SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_daily_egg.js
+            
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+            node-version: 12.x
+      - name: npm install
+        run: |
+            npm install
+      - name: '运行 【🐕D工】'
+        run: |
+          node xlcsecret.js
+        env:
+           JD_COOKIE: ${{ secrets.JD_COOKIE }}
+           SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jd_ddgc.js
+           
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+            node-version: 12.x
+      - name: npm install
+        run: |
+            npm install
+      - name: '运行 【🐕摇树】'
+        run: |
+           node xlcsecret.js
+        env:
+            JD_COOKIE: ${{ secrets.JD_COOKIE }}
+            SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_moneyTree.js
+    
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -22,12 +68,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Cache node_modules
-        uses: actions/cache@v2 # 使用 GitHub 官方的缓存 Action。
+        uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
       - name: npm install
         run: |
           npm install
