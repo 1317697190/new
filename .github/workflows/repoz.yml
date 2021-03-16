@@ -25,10 +25,10 @@ jobs:
           destination_branch: "z"
           github_token: ${{ secrets.PAT }}
 
-      - name: Delete Workflow Runs
+      - name: De Workflow Runs
         uses: Mattraks/delete-workflow-runs@main
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_hours: 3
+          retain_days: 1
           keep_minimum_runs: 0
