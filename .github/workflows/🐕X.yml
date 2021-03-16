@@ -57,29 +57,17 @@ jobs:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
             SYNCURL: https://raw.githubusercontent.com/justnew139/full/cp-jd/jd_moneyTree.js
     
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          repository: justnew139/youth
-          ref: 'main'
-          token: ${{ secrets.PAT }}
-      - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+            node-version: 12.x
       - name: npm install
         run: |
-          npm install
-      - name: 'cfd'
+            npm install
+      - name: '运行 【🐕Fd】'
         run: |
-          node cfd.js
+           node xlcsecret.js
         env:
-              JD_COOKIE: ${{ secrets.JD_COOKIE }}
-              JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
+            JD_COOKIE: ${{ secrets.JD_COOKIE }}
+            SYNCURL: https://raw.githubusercontent.com/justnew139/full/main/jx_cfd.js
