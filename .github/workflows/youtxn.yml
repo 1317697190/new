@@ -70,6 +70,25 @@ jobs:
           XLC: ${{ secrets.XLC }}
           GITHUB: ${{ secrets.GITHUB }}
           EFORK: ${{ secrets.EFORK }}
+          
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
+      - name: 'run Qyd'
+        run: |
+           node xlcsecret-All.js
+        env:
+          QMYD_qmydTOKEN: ${{ secrets.QMYD_qmydTOKEN }}
+          QMYD_CASH: ${{ secrets.QMYD_CASH }}
+          SYNCURL: /z/Task/qmyd.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
+          EFORK: ${{ secrets.EFORK }}
   
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
