@@ -79,6 +79,26 @@ jobs:
       - name: npm install
         run: |
               npm install
+      - name: 'run xp'
+        run: |
+           node xlcsecret-All.js
+        env:
+          XP_refreshTOKEN: ${{ secrets.XP_refreshTOKEN }}
+          XP_live: ${{ secrets.XP_live }}
+          XP_CASH: ${{ secrets.XP_CASH }}
+          SYNCURL: z/Task/iboxpay.js
+          XLC: ${{ secrets.XLC }}
+          GITHUB: ${{ secrets.GITHUB }}
+          EFORK: ${{ secrets.EFORK }}
+          
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+           node-version: 12.x
+      - name: npm install
+        run: |
+              npm install
       - name: 'run Qyd'
         run: |
            node xlcsecret-All.js
